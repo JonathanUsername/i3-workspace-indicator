@@ -8,7 +8,6 @@ fn main() {
     // establish a connection to i3 over a unix socket
     let mut connection = I3Connection::connect().unwrap();
     
-    // request and print the i3 version
     let workspaces = connection.get_workspaces().unwrap().workspaces;
     let bools: Vec<bool> = workspaces.iter().map(|i| i.focused).collect();
 
@@ -18,3 +17,4 @@ fn main() {
     }).collect();
     println!("{}", out_str.join(" "));
 }
+
