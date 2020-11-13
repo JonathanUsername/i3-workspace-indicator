@@ -1,7 +1,7 @@
 extern crate i3ipc;
 use i3ipc::I3Connection;
 
-const UNFOCUSED: &'static str = "%{F#8A2BE2}%{F-}";
+const UNFOCUSED: &'static str = "%{F#6F6F6F}%{F-}";
 const FOCUSED: &'static str = "";
 
 fn main() {
